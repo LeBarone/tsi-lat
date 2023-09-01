@@ -1,0 +1,96 @@
+button,
+.button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 17px 35px;
+    color: var(--grey95);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+button:hover,
+.button:hover {
+    background-color: #00eb3e;
+}
+.button.btn--xl {
+    font-size: 1.6rem;
+    padding: 25px 50px;
+}
+.has-icon-forward {
+    padding-right: 30px;
+}
+.has-icon-back {
+    padding-left: 30px;
+}
+.has-icon-back:before {
+    content: "";
+    display: inline-block;
+    background-image: url(/assets/images/icons/arrow-right.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+    transform: rotate(180deg);
+}
+.button.has-icon-forward::after {
+    content: "";
+    display: inline-block;
+    background-image: url(/assets/images/icons/arrow-right.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 15px;
+    margin-left: 15px;
+    transition: all 0.2s;
+}
+.button.has-icon-forward:hover::after {
+    background-position: 5px;
+}
+
+.cta--next_page {
+    float: right;
+}
+.cta--prev_page {
+    background-color: transparent;
+    border:0;
+    padding: 0;
+    height: 60px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+.cta--prev_page:hover,
+.cta--prev_page:focus {
+    background-color: transparent;
+    opacity: 1;
+    text-decoration: underline;
+}
+.to-remove {
+    background-color: transparent;
+    padding: 0;
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.btn--home_results {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    margin-right: 20px;
+}
+.btn--home_results:hover,
+.btn--home_results:focus {
+    background-color: transparent;
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+}
+@media(max-width: 991px){
+    .btn--home_results {
+        margin-bottom: 30px!important;
+    }
+}
