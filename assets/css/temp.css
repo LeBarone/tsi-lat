@@ -1,0 +1,110 @@
+
+.m0{
+    margin:0px;
+}
+
+fieldset {
+  border: none;
+}
+
+.form-input--email {
+    display: inline-block;
+    background: #00ff8414;
+    border: 1px solid var(--color-primary);
+    padding: 17px 35px;
+    color: var(--grey95);
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: inherit;
+    transition: all 0.2s ease-in;  
+}
+
+#email-form-response {
+    display: none;
+    width: 100%;
+    margin-top: 35px;
+    padding: 17px 35px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: inherit;
+    transition: opacity 1s ease;
+}
+
+.field-success {
+    background-color: #c4ffe257;
+    color: #002333;
+}
+
+.field-fail {
+    background-color: #f100001f;
+    color: #002333;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.form-element {
+    align-items: center;
+    margin-right: 10px;
+}
+
+.gdpr-popup {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  background-color: #002333;
+  padding: 10px;
+  width: 300px;
+}
+
+.gdpr-popup p {
+  color: #ec397b;
+  margin: 0;
+  padding: 0;
+}
+
+.gdpr-popup a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Mobile-first approach */
+@media screen and (max-width: 767px) {
+    .form-element {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .form-container {
+        flex-direction: column;
+    }
+    .result-summary {
+      padding-bottom: 30px!important;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablets */
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1365px) {
+    /* Styles for small laptops and tablets */
+  }
+  
+  @media screen and (min-width: 1366px) and (max-width: 1919px) {
+    /* Styles for standard laptops and desktops */
+  }
+  
+  @media screen and (min-width: 1920px) {
+    /* Styles for large monitors and high-resolution displays */
+  }

@@ -1,0 +1,75 @@
+.footer {
+    display: flex;
+    flex-direction:column;
+    flex-shrink: 0;
+    background-color: var(--grey95);
+    padding: 10px 0;
+    margin: 0;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: white;
+    
+}
+.footer .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.footer__nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.footer__nav li {
+    margin-right: 10px;
+}
+
+.footer__nav a {
+    color: white;
+
+}
+@media(max-width: 992px){
+    .footer {
+        text-align: center;
+    }
+    .footer__nav ul {
+        justify-content: center;
+    }
+}
+
+
+/* Mobile-first approach */
+@media screen and (max-width: 767px) {
+    .footer__copyright{
+      display: none;
+    }
+    .footer__nav li {
+      flex-basis: calc(50% - 10px);
+      font-size: 1rem;
+    }
+    .footer .container {
+      flex-direction: column;
+      align-items: normal;
+      padding: 17px 0;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablets */
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1365px) {
+    /* Styles for small laptops and tablets */
+  }
+  
+  @media screen and (min-width: 1366px) and (max-width: 1919px) {
+    /* Styles for standard laptops and desktops */
+  }
+  
+  @media screen and (min-width: 1920px) {
+    /* Styles for large monitors and high-resolution displays */
+  }
