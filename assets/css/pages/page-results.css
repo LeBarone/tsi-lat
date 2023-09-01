@@ -1,0 +1,132 @@
+body.page--results .body__page {
+    padding-top: 60px;
+}
+.result-summary {
+    background-color: var(--grey95);
+    padding-bottom: 80px;
+}
+.result-summary .h1 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.summ-items {
+    --gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+.summ-item {
+    background-color: var(--grey90);
+    padding: 30px 30px;
+    flex: 0 0 calc(20% - var(--gap));
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.summ-item:hover,
+.summ-item:focus {
+    background-color: var(--grey80);
+}
+.summ-item .cat {
+    color: var(--grey70);
+    font-size: 14px;
+    margin-bottom: 7px;
+    display: block;
+}
+.summ-item .title {
+    display: block;
+    color: var(--color-primary);
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.longform-items {
+    margin-bottom: 50px;
+}
+.longform-item {
+    border-bottom: 1px solid var(--grey30);
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    /*display: flex;
+    gap: 40px;
+    */
+}
+
+.longform-item .title {
+    font-size: 2rem;
+}
+.longform-item .level {
+    margin-bottom: 25px;
+}
+.longform-item .level p {
+    font-size: 0.9rem;
+}
+.longform-item .level span {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--grey95);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.longform-item .level span b {
+    /*color: var(--color-secondary);*/
+    text-transform: uppercase;
+}
+.longform-item--content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.longform-item--subcontent {
+    max-width: 800px;
+}
+.long-description {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
+}
+.active .longform-trigger {
+    display: none;
+}
+.active .long-description {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.result_info {
+    display: inline-block;
+    background-color: var(--grey10);
+    padding: 40px 60px;
+    margin-bottom: 50px;
+}
+.result_info p {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+
+
+@media(max-width: 991px){
+    .summ-item {
+        flex: 0 0 calc(25% - var(--gap));
+    }
+    .longform-item {
+        flex-direction: column;
+    }
+}
+@media(max-width: 540px){
+    .summ-item {
+        flex: 0 0 calc(50% - var(--gap));
+        width: 100%;
+          
+    }
+    .summ-items {
+        flex-direction: column;
+    }
+}
+
+

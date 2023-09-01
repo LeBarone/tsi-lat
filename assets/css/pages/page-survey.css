@@ -1,0 +1,57 @@
+@import url(/assets/css/components/progress-bar.css);
+@import url(/assets/css/components/inputs.css);
+
+.heading {
+    margin-bottom: 50px;
+}
+.header__logo .img {
+    margin-bottom: 20px;
+}
+.survey__body {
+    max-width: 800px;
+}
+.survey__item {
+    margin-bottom: 100px;
+}
+.survey__item.completed {
+    opacity: 0.4;
+}
+.survey__question {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+}
+
+.survey__radios {
+    display: flex;
+        
+        justify-content: space-between;
+        flex: 0 0 400px;
+        margin: 0 30px;
+        flex-basis: 400px;
+        padding-bottom: 50px;
+        gap: 30px;
+}
+@media(min-width: 992px){
+    .survey__radios {
+        align-items: center;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+      }
+      
+      /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+      .sticky + .body__page {
+        padding-top: 102px;
+      }
+}
+@media(max-width: 991px){
+    .survey__radios {
+        flex-direction: column;
+    }
+    .page-survey .footer {
+        padding-bottom: 70px;
+    }
+}
