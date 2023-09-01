@@ -1,0 +1,21 @@
+/* Colors */
+:root {
+    --color-primary: #00FF84;
+    --color-secondary: #EC397B;
+
+    --grey95: #002333;
+    --grey90: #0C435C;
+    --grey80: #236685;
+    --grey70: #458DAD;
+    --grey60: #72B7D6;
+    --grey50: #AAE4FF;
+    --grey40: #B9E9FF;
+    --grey30: #C8EEFF;
+    --grey20: #D8F2FF;
+    --grey10: #E7F7FF;
+    --grey05: #F2FBFF;
+
+
+    --color-heading: var(--grey95);
+    --color-paragraph: var(--grey90);
+}
